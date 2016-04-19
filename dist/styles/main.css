@@ -5,7 +5,7 @@ ul {
   list-style: none; }
 
 li {
-  float: right; }
+  float: left; }
 
 h1 {
   text-align: center;
@@ -19,13 +19,16 @@ h2 {
 img {
   width: 300px;
   height: 300px;
-  margin: 10px; }
+  margin: 0 10px 0 10px; }
+
+li:nth-child(3n) img {
+  margin-right: 0; }
 
 .wrapper {
   width: 100%;
   height: 1000px;
   background-color: #333;
-  color: #666; }
+  color: #777; }
 
 input {
   background-color: #8A4A62;
@@ -35,17 +38,20 @@ input {
   width: 150px; }
 
 #submit-button {
-  border: 1px solid #C97491;
+  width: 100px;
+  background-color: #154C48;
+  border: 2px solid #8A4A62;
   border-radius: 5px;
-  box-shadow: 1px 1px 8px 1px rgba(47, 82, 48, 0.48); }
+  box-shadow: 1px 1px 8px 1px rgba(47, 82, 48, 0.48);
+  color: #39AA45; }
 
 .gallery-items {
-  padding-top: 50px;
-  margin-top: 0 auto; }
+  width: 960px;
+  padding: 50px 0 0 0;
+  margin: 0 auto; }
 
 form {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  clear: both;
-  font-family: arial; }
+  clear: both; }
