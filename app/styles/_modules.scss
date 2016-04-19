@@ -1,0 +1,18 @@
+#submit-button {
+  border: 1px solid #C97491;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 1px rgba(47,82,48,0.48);
+}
+
+.gallery-items {
+  padding-top: 50px;
+  margin-top: 0 auto;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  clear: both;
+  font-family: arial;
+}

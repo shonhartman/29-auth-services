@@ -1,0 +1,23 @@
+<div class="wrapper">
+
+<h1>Upload Your Kanis Shred Photos</h1>
+
+<form ng-submit="galleryCtrl.addImage()">
+  <!-- name input --------------------------------------------------->
+  <input type="text" placeholder="Image Name" ng-model="galleryCtrl.newImage.name"/>
+
+  <!-- img_url input --------------------------------------------------->
+  <input type="url" placeholder="Image Url" ng-model="galleryCtrl.newImage.image_url">
+  <input id="submit-button" type="submit" value="Submit Image">
+</form>
+
+
+
+<ul class="gallery-items">
+  <li ng-repeat="image in galleryCtrl.list">
+    <img src="{{ image.image_url }}" alt="">
+    <h2>{{ image.name }}</h2>
+  </li>
+</ul>
+
+</div>
